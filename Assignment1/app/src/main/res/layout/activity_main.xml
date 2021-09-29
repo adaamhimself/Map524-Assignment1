@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/calculation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="10sp"
+            android:text="@string/calculation"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/numberOne"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberOne"
+            android:textSize="50sp"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/numberTwo"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberTwo"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberOne"
+            app:layout_constraintTop_toBottomOf="@+id/calculation"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/numberThree"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberThree"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberTwo"
+            app:layout_constraintTop_toBottomOf="@+id/calculation"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/additionSymbol"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberThree"
+            app:layout_constraintTop_toBottomOf="@+id/calculation"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/numberFour"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberFour"
+            android:textSize="50sp"
+            app:layout_constraintTop_toBottomOf="@+id/numberOne"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/numberFive"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberFive"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberFour"
+            app:layout_constraintTop_toBottomOf="@+id/numberTwo"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/numberSix"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberSix"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberFive"
+            app:layout_constraintTop_toBottomOf="@+id/numberThree"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/minusSymbol"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/subtractionSymbol"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberSix"
+            app:layout_constraintTop_toBottomOf="@+id/additionSymbol"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/numberSeven"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberSeven"
+            android:textSize="50sp"
+            app:layout_constraintTop_toBottomOf="@+id/numberFour"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/numberEight"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberEight"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberSeven"
+            app:layout_constraintTop_toBottomOf="@+id/numberFive"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/numberNine"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberNine"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberEight"
+            app:layout_constraintTop_toBottomOf="@+id/numberSix"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/multiplicationSymbol"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/multiplicationSymbol"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberNine"
+            app:layout_constraintTop_toBottomOf="@+id/minusSymbol"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/clear"
+            android:textSize="50sp"
+            app:layout_constraintTop_toBottomOf="@+id/numberSeven"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/numberZero"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/numberZero"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberSeven"
+            app:layout_constraintTop_toBottomOf="@+id/numberEight"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/equalsSymbol"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/equalsSymbol"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/numberZero"
+            app:layout_constraintTop_toBottomOf="@+id/numberEight"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/divisionSymbol"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/pale_red"
+            android:gravity="center"
+            android:text="@string/divisionSymbol"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toRightOf="@+id/equalsSymbol"
+            app:layout_constraintTop_toBottomOf="@+id/multiplicationSymbol"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/advanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:background="@color/light_purple"
+            android:gravity="center"
+            android:text="@string/advanced"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/historyArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/history"
+            android:layout_marginLeft="40sp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
